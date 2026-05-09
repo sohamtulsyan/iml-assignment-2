@@ -1,0 +1,32 @@
+Downloading Breast Cancer Wisconsin dataset from UCI …
+  Loaded: X=(569, 30), y=(569,)
+  Benign (+1): 357   Malignant (-1): 212
+
+Running Soft-Margin SVM for C in [0.001, 0.01, 0.1, 1.0, 10.0, 100.0] …
+  Training SVM with C=0.001 …
+    Train acc=0.9408  Test acc=0.9469  #SV=218
+  Training SVM with C=0.01 …
+    Train acc=0.9759  Test acc=0.9646  #SV=101
+  Training SVM with C=0.1 …
+    Train acc=0.9868  Test acc=0.9735  #SV=53
+  Training SVM with C=1.0 …
+    Train acc=0.9934  Test acc=0.9735  #SV=34
+  Training SVM with C=10.0 …
+    Train acc=0.9934  Test acc=0.9469  #SV=28
+  Training SVM with C=100.0 …
+    Train acc=0.9978  Test acc=0.9469  #SV=25
+
+════════════════════════════════════════════════════════════
+       C   Train Acc    Test Acc       #SV
+────────────────────────────────────────────────────────────
+   0.001      0.9408      0.9469       218
+    0.01      0.9759      0.9646       101
+     0.1      0.9868      0.9735        53
+     1.0      0.9934      0.9735        34
+    10.0      0.9934      0.9469        28
+   100.0      0.9978      0.9469        25
+════════════════════════════════════════════════════════════
+
+Best test accuracy: 0.9735  at C=0.1
+  → #Support vectors: 53
+  → ||w||₂ = 1.4555

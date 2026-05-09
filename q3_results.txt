@@ -1,0 +1,89 @@
+Loading Fashion-MNIST …
+README.md: 9.02kB [00:00, 7.75MB/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+fashion_mnist/train-00000-of-00001.par        
+fashion_mnist/train-00000-of-00001.parqu(…): 100%|█| 30.9M/30.9M [00:35<00:0fashion_mnist/train-00000-of-00001.parqu(…): 100%|█| 30.9M/30.9M [00:35<00:00, 878k
+fashion_mnist/test-00000-of-00001.parque(…): 100%|█| 5.18M/5.18M [00:06<00:0
+Generating train split: 100%|█| 60000/60000 [00:00<00:00, 780720.54 examples
+Generating test split: 100%|█| 10000/10000 [00:00<00:00, 1054746.27 examples
+  Train: (54000, 784), Val: (6000, 784), Test: (10000, 784)
+
+──────────────────────────────────────────────────
+Config: Tiny  [784→64]
+  Parameters: 101,200
+    Epoch   1/40  train_loss=0.09828  val_loss=0.06551
+    Epoch   5/40  train_loss=0.03506  val_loss=0.03291
+    Epoch  10/40  train_loss=0.02491  val_loss=0.02427
+    Epoch  15/40  train_loss=0.02165  val_loss=0.02128
+    Epoch  20/40  train_loss=0.01991  val_loss=0.01955
+    Epoch  25/40  train_loss=0.01856  val_loss=0.01832
+    Epoch  30/40  train_loss=0.01773  val_loss=0.01744
+    Epoch  35/40  train_loss=0.01677  val_loss=0.01658
+    Epoch  40/40  train_loss=0.01607  val_loss=0.01613
+  Test MSE : 0.01624   Time: 41.0s
+
+──────────────────────────────────────────────────
+Config: Small [784→128→32]
+  Parameters: 209,968
+    Epoch   1/40  train_loss=0.08232  val_loss=0.05186
+    Epoch   5/40  train_loss=0.03053  val_loss=0.02910
+    Epoch  10/40  train_loss=0.02442  val_loss=0.02434
+    Epoch  15/40  train_loss=0.02180  val_loss=0.02109
+    Epoch  20/40  train_loss=0.02048  val_loss=0.02001
+    Epoch  25/40  train_loss=0.01944  val_loss=0.01946
+    Epoch  30/40  train_loss=0.01870  val_loss=0.01835
+    Epoch  35/40  train_loss=0.01795  val_loss=0.01809
+    Epoch  40/40  train_loss=0.01740  val_loss=0.01736
+  Test MSE : 0.01745   Time: 45.4s
+
+──────────────────────────────────────────────────
+Config: Med   [784→256→64]
+  Parameters: 435,536
+    Epoch   1/40  train_loss=0.06676  val_loss=0.04422
+    Epoch   5/40  train_loss=0.02584  val_loss=0.02466
+    Epoch  10/40  train_loss=0.02087  val_loss=0.02028
+    Epoch  15/40  train_loss=0.01837  val_loss=0.01902
+    Epoch  20/40  train_loss=0.01667  val_loss=0.01630
+    Epoch  25/40  train_loss=0.01544  val_loss=0.01509
+    Epoch  30/40  train_loss=0.01455  val_loss=0.01437
+    Epoch  35/40  train_loss=0.01385  val_loss=0.01408
+    Epoch  40/40  train_loss=0.01336  val_loss=0.01353
+  Test MSE : 0.01363   Time: 54.9s
+
+──────────────────────────────────────────────────
+Config: Large [784→512→128→32]
+  Parameters: 944,176
+    Epoch   1/40  train_loss=0.06107  val_loss=0.04071
+    Epoch   5/40  train_loss=0.02635  val_loss=0.02505
+    Epoch  10/40  train_loss=0.02170  val_loss=0.02186
+    Epoch  15/40  train_loss=0.01961  val_loss=0.02034
+    Epoch  20/40  train_loss=0.01818  val_loss=0.01827
+    Epoch  25/40  train_loss=0.01718  val_loss=0.01783
+    Epoch  30/40  train_loss=0.01642  val_loss=0.01648
+    Epoch  35/40  train_loss=0.01577  val_loss=0.01632
+    Epoch  40/40  train_loss=0.01523  val_loss=0.01548
+  Test MSE : 0.01556   Time: 81.3s
+
+──────────────────────────────────────────────────
+Config: XL    [784→1024→256→64]
+  Parameters: 2,166,096
+    Epoch   1/40  train_loss=0.05254  val_loss=0.03592
+    Epoch   5/40  train_loss=0.02232  val_loss=0.02146
+    Epoch  10/40  train_loss=0.01788  val_loss=0.01731
+    Epoch  15/40  train_loss=0.01565  val_loss=0.01680
+    Epoch  20/40  train_loss=0.01422  val_loss=0.01427
+    Epoch  25/40  train_loss=0.01320  val_loss=0.01325
+    Epoch  30/40  train_loss=0.01253  val_loss=0.01238
+    Epoch  35/40  train_loss=0.01198  val_loss=0.01187
+    Epoch  40/40  train_loss=0.01151  val_loss=0.01184
+  Test MSE : 0.01197   Time: 139.8s
+
+════════════════════════════════════════════════════════════════════════
+Config                             Params  Train MSE    Val MSE   Test MSE  Time(s)
+────────────────────────────────────────────────────────────────────────
+Tiny  [784→64]                    101,200    0.01607    0.01613    0.01624     41.0
+Small [784→128→32]                209,968    0.01740    0.01736    0.01745     45.4
+Med   [784→256→64]                435,536    0.01336    0.01353    0.01363     54.9
+Large [784→512→128→32]            944,176    0.01523    0.01548    0.01556     81.3
+XL    [784→1024→256→64]         2,166,096    0.01151    0.01184    0.01197    139.8
+════════════════════════════════════════════════════════════════════════

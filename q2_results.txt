@@ -1,0 +1,21 @@
+Loading Iris dataset …
+README.md: 1.66kB [00:00, 3.17MB/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Iris.csv: 5.11kB [00:00, 12.0MB/s]
+Generating train split: 100%|██████████| 150/150 [00:00<00:00, 25536.62 examples/s]
+  Shape: (150, 4)
+
+Running K-Means (10 restarts per k) …
+  k=2  inertia=152.3687  iters=4
+  k=3  inertia=78.9408  iters=6
+  k=4  inertia=57.3454  iters=8
+  k=5  inertia=46.5356  iters=7
+
+════════════════════════════════════════════════════
+   k       Inertia    Iterations
+────────────────────────────────────────────────────
+   2      152.3687             4
+   3       78.9408             6
+   4       57.3454             8
+   5       46.5356             7
+════════════════════════════════════════════════════
