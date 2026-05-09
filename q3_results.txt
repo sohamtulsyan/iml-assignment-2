@@ -87,3 +87,9 @@ Med   [784→256→64]                435,536    0.01336    0.01353    0.01363  
 Large [784→512→128→32]            944,176    0.01523    0.01548    0.01556     81.3
 XL    [784→1024→256→64]         2,166,096    0.01151    0.01184    0.01197    139.8
 ════════════════════════════════════════════════════════════════════════
+
+Very interesting results overall. Tiny somehow beat small in terms of test MSE (because the bottlenecks are different)
+XL gives the best results, but the obvious tradeoff is computational efficiency and time. Roughly 2.5× slower for about 12% better MSE compared to Med.
+Also adding the encoder-decoder structure doesn't necessarily mean that it'll be the best model - as clearly visible from the XL model
+
+Med would probably be a nice optimal level to choose in a real-world scenario, despite not having the best results - to account for al the factors.

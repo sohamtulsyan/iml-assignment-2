@@ -30,3 +30,10 @@ Running Soft-Margin SVM for C in [0.001, 0.01, 0.1, 1.0, 10.0, 100.0] …
 Best test accuracy: 0.9735  at C=0.1
   → #Support vectors: 53
   → ||w||₂ = 1.4555
+
+It is to be noted that both 0.1 and 1.0 give the same test accuracy, but since 0.1 uses a lot more support vectors, it's a more 'robust model'
+It may be prone to overfitting, however, given the train/test accuracies, it does not overall show too high of a variance. 
+Lower than 57 may infact be slightly underfit. 
+
+Interesting to also see that as C increases, the train accuracy also increases which just shows that added complexity will lead to overfitting. 
+Also the presence of this many support vectors may just show that the data is not directly linear - which of course, is expected from a dataset like this. 

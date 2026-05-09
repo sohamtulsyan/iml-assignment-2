@@ -19,3 +19,5 @@ Running K-Means (10 restarts per k) …
    4       57.3454             8
    5       46.5356             7
 ════════════════════════════════════════════════════
+
+Elbow method shows that k = 3 is mostly optimal. Also number of iterations appears to be different given different values of k. There isn't a visible trend, but interesting to see that the same algorithm converges differently with different values of k
